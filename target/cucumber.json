@@ -1,0 +1,97 @@
+[
+  {
+    "line": 2,
+    "elements": [
+      {
+        "start_timestamp": "2019-12-30T23:51:10.953Z",
+        "line": 4,
+        "name": "Add a new payee",
+        "description": "",
+        "id": "add-new-payee-under-pay-bills;add-a-new-payee",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 2486066285,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "user is already on Add New Payee page",
+            "match": {
+              "location": "AddNewPayeePageStepDefinitions.userIsAlreadyOnAddNewPayeePage()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 535269545,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "user creates new payee using following information",
+            "match": {
+              "location": "AddNewPayeePageStepDefinitions.user_creates_new_payee_using_following_information(String,String\u003e)"
+            },
+            "rows": [
+              {
+                "cells": [
+                  "Payee Name",
+                  "The Law Offices of Hyde, Price \u0026 Scharks"
+                ]
+              },
+              {
+                "cells": [
+                  "Payee Address",
+                  "100 Same st, Anytown, USA, 10001"
+                ]
+              },
+              {
+                "cells": [
+                  "Account",
+                  "Checking"
+                ]
+              },
+              {
+                "cells": [
+                  "Payee details",
+                  "XYZ account"
+                ]
+              }
+            ],
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 67628212,
+              "status": "passed"
+            },
+            "line": 11,
+            "name": "message \"The new payee The Law Offices of Hyde, Price \u0026 Scharks was successfully created.\" should be displayed",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"The new payee The Law Offices of Hyde, Price \u0026 Scharks was successfully created.\"",
+                  "offset": 8
+                }
+              ],
+              "location": "AddNewPayeePageStepDefinitions.message_should_be_displayed(String)"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@addNewPayee"
+          }
+        ]
+      }
+    ],
+    "name": "Add new payee under pay bills",
+    "description": "",
+    "id": "add-new-payee-under-pay-bills",
+    "keyword": "Feature",
+    "uri": "file:src/test/resources/features/AddNewPayee.feature",
+    "tags": []
+  }
+]
